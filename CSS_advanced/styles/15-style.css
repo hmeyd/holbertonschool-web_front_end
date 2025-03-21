@@ -1,8 +1,8 @@
-/* Importation de normalize.css */
+/* Intégration de normalize.css pour une meilleure compatibilité entre navigateurs */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 :root {
-    /* Définition des couleurs principales */
+    /* Palette de couleurs principales */
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -10,45 +10,45 @@
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
     
-    /* Définition des polices de caractères */
+    /* Polices de caractères */
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     
-    /* Définition des tailles de police */
+    /* Tailles de police */
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
     --font-size-x-large: 2.3rem;
     --font-size-xx-large: 4.8rem;
     
-    /* Définition des poids de police */
+    /* Poids de police */
     --font-weight-regular: 400;
     --font-weight-bold: 700;
     
-    /* Définition des hauteurs de ligne */
+    /* Hauteurs de ligne */
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
     
-    /* Définition des styles des sections */
+    /* Styles des sections */
     --section-header-align: center;
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
 
-/* Ajout d'une règle de dimensionnement universelle */
+/* Application d'un modèle de dimensionnement universel */
 * {
     box-sizing: border-box;
 }
 
-/* Réglage du comportement du défilement et de la taille de la police */
+/* Définition du comportement du défilement et de la taille de la police */
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
-/* Style du corps du document */
+/* Style global du corps du document */
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
@@ -57,13 +57,13 @@ body {
     line-height: var(--line-height-base);
 }
 
-/* Style des titres */
+/* Apparence des titres */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
 
-/* Styles des liens */
+/* Apparence des liens */
 a:link {
     color: var(--text-color);
     text-decoration: none;
@@ -81,22 +81,22 @@ a:active {
     background-color: var(--color-light-grey);
 }
 
-/* Cacher les éléments visuellement cachés */
+/* Masquage des éléments uniquement pour l'affichage visuel */
 .visually-hidden {
     display: none;
 }
 
-/* Style des catégories de carte */
+/* Apparence des catégories de carte */
 .card-category {
     color: var(--color-primary);
 }
 
-/* Alignement de l'en-tête de section */
+/* Alignement des en-têtes de section */
 .section-header {
     text-align: var(--section-header-align);
 }
 
-/* Style des titres de section */
+/* Apparence des titres de section */
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -105,10 +105,16 @@ a:active {
     color: var(--section-title-color);
 }
 
-/* Style du slogan de la section */
+/* Apparence des slogans de section */
 .section-tagline {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
+}
+
+/* Configuration du conteneur principal */
+.container {
+    width: 960px;
+    margin: 0 auto;
 }
